@@ -16,6 +16,7 @@ export const HtmlIcon = () => {
         d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"
       ></path>
     </svg>
+    <p className="text-center text-grey font-ubuntu mt-2 font-medium">HTML</p>
     </div>
   );
 };

@@ -8,9 +8,9 @@ import profile from './../assets/profile.png';
 
 const navigation = [
 //   { name: 'Dashboard', href: '#', current: false },
-  { id: '/about-me', name: 'Sobre mi', href: '#', current: false },
-  { id: '/projects', name: 'Proyectos', href: '#', current: false },
-  { id: '/contact', name: 'Contacto', href: '#', current: false },
+  { id: '/about-me', name: 'Sobre mi', href: '/about-me', current: false },
+  { id: '/projects', name: 'Proyectos', href: '/projects', current: false },
+  { id: '/contact', name: 'Contacto', href: '/contact', current: false },
 ]
 
 function classNames(...classes) {
@@ -19,36 +19,39 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <Disclosure as="nav" className="bg-gradient-to-r from-mediumBlue to-hardBlue sticky-top-0">
+    <Disclosure
+      as="nav"
+      className="bg-gradient-to-r from-mediumBlue to-hardBlue sticky-top-0"
+    >
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            
             <div className="relative flex h-16 items-center sm:justify-between">
+              {
+                <div className="rounded-lg text-lightBlue text-4xl sm:hidden ml-12">
+                  <a href="https://github.com/elgota" className="rounded-lg p-2">
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
 
-              <div className="rounded-lg text-lightBlue text-4xl sm:hidden mx-7">
-                  {/* <h1 className="text-hardBlue">Social here!</h1> */}
-                  <a href="#" className='rounded-lg p-4'>
-                        <FontAwesomeIcon icon={faGithub} />
-                    </a>
-                    
-                    <a href="#" className='rounded-lg p-4'>
-                        <FontAwesomeIcon icon={faLinkedin} />
-                    </a>
+                  <a href="https://www.linkedin.com/in/pablo-gottardini/" className="rounded-lg p-2">
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </a>
 
-                    <a href="#" className='rounded-lg p-4'>
-                        <FontAwesomeIcon icon={faEnvelope} />
-                    </a>
+                  <a href="mailto:jpgottardini@outlook.es" className="rounded-lg p-2">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                  </a>
 
-                    <a href="#" className='rounded-lg p-4'>
-                        <FontAwesomeIcon icon={faTwitter} />
-                    </a>
+                  <a href="https://twitter.com/el__gota" className="rounded-lg p-2">
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </a>
+                </div>
+              }
+
+              <div className="ml-7">
+                <Link to="/">
+                  <img src={profile} className="h-14 rounded-full"></img>
+                </Link>
               </div>
-
-              <div className="">
-                 <Link to="/"><img src={profile} className="h-14 rounded-full"></img></Link>
-              </div>
-
 
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -62,21 +65,23 @@ export default function Header() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
-                
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4 justify-center">
                     {navigation.map((item) => (
-                      <Link to={`${item.id}`}
+                      <Link
+                        to={`${item.id}`}
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'text-lightBlue' : 'text-lightBlue hover:bg-mediumBlue hover:text-lightBlue',
-                          'px-3 py-2 rounded-md font-ubuntu text-lg font-bold'
+                          item.current
+                            ? "text-lightBlue"
+                            : "text-lightBlue hover:bg-mediumBlue hover:text-lightBlue",
+                          "px-3 py-2 rounded-md font-ubuntu text-lg font-bold"
                         )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >{item.name}
+                        aria-current={item.current ? "page" : undefined}
+                      >
+                        {item.name}
                       </Link>
-                      
                     ))}
                   </div>
                 </div>
@@ -92,10 +97,12 @@ export default function Header() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'text-lightBlue' : 'text-lightBlue hover:bg-mediumBlue hover:text-lightBlue',
-                    'block px-3 py-2 rounded-md text-base font-medium'
+                    item.current
+                      ? "text-lightBlue"
+                      : "text-lightBlue hover:bg-mediumBlue hover:text-lightBlue",
+                    "block px-3 py-2 rounded-md text-base font-medium"
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
@@ -105,5 +112,5 @@ export default function Header() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }

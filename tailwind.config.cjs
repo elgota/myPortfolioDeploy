@@ -9,6 +9,7 @@ module.exports = {
       'lightBlue' : '#CAF0F8',
       'mediumBlue' : '#0077B6',
       'hardBlue' : '#023E8A',
+      'grey' : '#333333 ',
     },
     width: {
       '256' : '56rem',

@@ -1,7 +1,7 @@
-export const TailwindIcon = () => {
+export const TailwindIconSm = () => {
   return (
     <div className="m-2 rounded-lg hover:shadow-xl hover:scale-125">
-      <svg width={100} height={100} viewBox="0 0 128 128">
+      <svg width={50} height={50} viewBox="0 0 128 128">
         <defs>
           <linearGradient
             id="tailwindcss-original-wordmark-a"
@@ -25,7 +25,6 @@ export const TailwindIcon = () => {
           fill="#2d3748"
         ></path>
       </svg>
-      <p className="text-center text-grey font-ubuntu mt-2 font-medium">Tailwind CSS</p>
     </div>
   );
 };

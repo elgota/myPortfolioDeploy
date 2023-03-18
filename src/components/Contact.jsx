@@ -24,23 +24,20 @@ function Contact() {
   
     }
 
-    
-
-
   return (
-    <div className="bg-repeat h-screen opacity-80"  style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <div className="bg-repeat h-screen"  style={{ backgroundImage: `url(${backgroundImage})` }}>
       <section>
         <form ref={form} onSubmit={sendEmail}>
-  <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24">
+  <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24 h-screen">
     <div class="justify-center mx-auto text-left align-bottom transition-all transform rounded-lg sm:align-middle sm:max-w-4xl sm:w-full"> {/* bg-white */}
       <div class="grid flex-wrap items-center justify-center grid-cols-1 mx-auto shadow-xl lg:grid-cols-2 rounded-xl"> 
         <div class="w-full px-6 py-3">
           <div>
             <div class="mt-3 text-center sm:mt-5">
               <div class="inline-flex items-center w-full">
-                <h3 class="font-ubuntu font-light text-6xl">Escríbeme</h3>  {/* lg:text-5xl text-neutral-600 text-lg l eading-6 */}
+                <h3 class="font-ubuntu font-light text-6xl text-hardBlue font-medium">Escríbeme</h3>  {/* lg:text-5xl text-neutral-600 text-lg l eading-6 */}
               </div>
-              <div class="mt-4 text-base font-light font-ubuntu "> {/* text-gray-500 */}
+              <div class="mt-4 text-base font-medium font-ubuntu text-hardBlue"> {/* text-gray-500 */}
                 <p>Quiero saber de ti!</p>
               </div>
             </div>

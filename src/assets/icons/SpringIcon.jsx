@@ -7,6 +7,7 @@ export const SpringIcon = () => {
           fill="#77bc1f"
         ></path>
       </svg>
+      <p className="text-center text-grey font-ubuntu mt-2 font-medium">Spring</p>
     </div>
   );
 };

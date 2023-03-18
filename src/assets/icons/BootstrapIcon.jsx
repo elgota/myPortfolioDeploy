@@ -67,6 +67,7 @@ export const BootstrapIcon = () => {
           stroke="#fff"
         ></path>
       </svg>
+      <p className="text-center text-grey font-ubuntu mt-2 font-medium">Bootstrap</p>
     </div>
   );
 };
