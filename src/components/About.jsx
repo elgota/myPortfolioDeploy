@@ -40,7 +40,7 @@ function About() {
               Puedes mirar mis trabajos en la sección "Proyectos"
             </p>
             <p className="text-md text-justify mb-5 text-grey">
-              LLevo 2 años que estoy formándome como desarrollador y hoy busco
+              LLevo 2 años formándome como desarrollador y hoy busco
               mi primera experiencia en IT. Hice proyectos full-stack utilizando 
               Java Spring, Thymeleaf y MySQL durante mi cursado en Egg Education. 
               También tuve mi experiencia trainee como back-end en Hunteando, 
