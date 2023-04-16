@@ -29,7 +29,7 @@ function Hero() {
             <div className="border-solid p-5 rounded-lg shadow-xl text-center sm:h-80 h-full sm:w-128 items-center">
                 {/* <h4 className="font-ubuntu text-2xl font-light mb-2 text-hardBlue text-grey">Hola! Mi nombre es</h4> */}
                 <h1 className="text-7xl font-bold mb-5 text-hardBlue">Juan Pablo</h1>
-                <p className="font-ubuntu text-2xl font-light mb-10 text-grey">Desarrollador Web Full-Stack</p>
+                <p className="font-ubuntu text-2xl font-light mb-10 text-grey">Desarrollador Web Front-End</p>
                 
                 <Link class="font-ubuntu text-2xl font-light px-5 py-4 text-center text-lightBlue transition duration-500 ease-in-out transform bg-gradient-to-r from-mediumBlue to-hardBlue lg:px-10 rounded-xl hover:shadow-xl hover:bg-lightBlue" to={"/projects"}>Mis proyectos </Link>
                 {/* <FontAwesomeIcon icon={faArrowAltCircleRight} /> */}

@@ -33,15 +33,14 @@ function About() {
 
         <div className="flex flex-col sm:flex-row sm:justify-start w-full sm:w-256 mx-auto mt-10">
           <div className="sm:w-128 sm:mx-6 w-full mx-2">
-            <h1 className="text-4xl font-medium mb-2 text-hardBlue mb-5">Me llamo</h1>
+            <h1 className="text-4xl font-medium mb-2 text-hardBlue mb-5">Soy Juan Pablo</h1>
             <p className="text-md text-justify mb-5 text-grey">
-              Juan Pablo, soy de Mendoza-Argentina y como Desarrollador Full Stack creo 
+              Vivo de Mendoza-Argentina y como Desarrollador Front End creo 
               aplicaciones que brinden soluciones efectivas y creativas. 
               Puedes mirar mis trabajos en la sección "Proyectos"
             </p>
             <p className="text-md text-justify mb-5 text-grey">
-              LLevo 2 años formándome como desarrollador y hoy busco
-              mi primera experiencia en IT. Hice proyectos full-stack utilizando 
+              LLevo 2 años formándome como desarrollador. Hice proyectos utilizando 
               Java Spring, Thymeleaf y MySQL durante mi cursado en Egg Education. 
               También tuve mi experiencia trainee como back-end en Hunteando, 
               junto a un equipo bajo metodologías Ágiles
