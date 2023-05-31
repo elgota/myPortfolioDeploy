@@ -52,7 +52,7 @@ const projects = [
     iconFour: <MySQLIconSm/>, 
     title: 'Vivero13',
     description: 'Desarrollo de un ecommerce con stack MERN y MySQL, permitiendo una experiencia de compra en línea optimizada para la venta de plantas y productos relacionados.',
-    href: 'https://github.com/Hunteando/ecommerce-s1-g13.git'
+    href: 'https://github.com/elgota/reactEcommerce'
   },
 
   {
